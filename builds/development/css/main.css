@@ -1,0 +1,581 @@
+@import "http://webfonts.ru/import/raleway.css";
+/*
+	Raleway, 100, 100 italic, 200, 200 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
+*/
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.empty {
+  height: 230px;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  margin: 0;
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: medium none;
+}
+
+/*a {
+    @include links(orange, blue, yellow, teal);
+}*/
+input {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none 0;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1800px;
+  background-color: rgba(20, 18, 18, 0.59);
+  z-index: 100;
+}
+.header .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+}
+.header .navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: 0 solid transparent;
+}
+.header .navbar-nav {
+  margin: 25px 0;
+}
+.header .navbar > .container .navbar-brand,
+.header .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+}
+.header .container > .navbar-header,
+.header .container-fluid > .navbar-header {
+  margin-left: 65px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.header .navbar-default .navbar-nav > li > a {
+  color: #f1f1f1;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.header .navbar-default .navbar-nav > li > a:hover {
+  color: #c5b84f;
+}
+.header .navbar-default .navbar-nav li a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #c5b84f;
+  bottom: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+.header .navbar-default .navbar-nav li a:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.header .navbar-default .navbar-nav > .active > a,
+.header .navbar-default .navbar-nav > .active > a:hover,
+.header .navbar-default .navbar-nav > .active > a:focus {
+  color: #c5b84f;
+  background-color: transparent;
+}
+.header .navbar-default .navbar-nav > .active > a:after,
+.header .navbar-default .navbar-nav > .active > a:hover:after,
+.header .navbar-default .navbar-nav > .active > a:focus:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #c5b84f;
+  bottom: 0;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.social-block {
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(-5%, -50%);
+  transform: translate(-5%, -50%);
+  z-index: 100;
+}
+.social-block a {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#scrollUp {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  display: none;
+  background-color: transparent;
+  z-index: 50;
+  opacity: 0.8;
+}
+
+.screen-1 {
+  background: url("../img/bg-1.jpg") 50% no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  padding: 235px 0;
+  position: relative;
+}
+.screen-1 .main-content {
+  font-family: "Raleway", sans-serif;
+}
+.screen-1 .main-content .description {
+  color: #f1f1f1;
+  font-size: 31px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+.screen-1 .main-content h1 {
+  color: #c5b84f;
+  font-size: 130px;
+  line-height: 160px;
+  font-weight: 600;
+  margin-bottom: 150px;
+  margin-top: 0;
+}
+.screen-1 .main-content h1 span {
+  display: block;
+  color: #f1f1f1;
+  font-size: 127px;
+  font-weight: 400;
+}
+
+.screen-2 {
+  background: url("../img/bg-2.jpg") 50% no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  padding: 130px 0 30px;
+  position: relative;
+}
+.screen-2 .main-content {
+  font-family: "Raleway", sans-serif;
+}
+.screen-2 .main-content .heading {
+  color: #f1f1f1;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.screen-2 .main-content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.screen-2 .main-content .more {
+  margin-bottom: 20px;
+}
+
+.screen-3 {
+  background-color: #c5b84f;
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  padding: 120px 0 230px;
+  position: relative;
+}
+.screen-3 .main-content {
+  font-family: "Raleway", sans-serif;
+}
+.screen-3 .main-content .heading {
+  color: #212121;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.screen-3 .main-content .filtr-group {
+      /*.container:after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
+      .container .mix{
+        display: inline-block;
+        width: 49%;
+      }
+
+      .container .mix,
+      .container .gap {
+        text-align: center;
+        background: #03899c;
+        margin-bottom: 2%;
+        display: none;
+      }
+
+      .container .mix.category-1{
+        border-top: 5px solid green;
+      }
+
+      .container .mix.category-2{
+        border-top: 5px solid yellow;
+      }
+
+      .container .mix.category-3{
+        border-top: 5px solid red;
+      }
+
+      .container .mix:after{
+        content: attr(data-myorder);
+        color: white;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 4% 6%;
+        font-weight: 700;
+      }
+
+      .container .mix:before{
+        content: '';
+        display: inline-block;
+        padding-top: 60%;
+      }*/
+}
+.screen-3 .main-content .filtr-group .controls {
+  margin-bottom: 10px;
+}
+.screen-3 .main-content .filtr-group button {
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
+  max-width: 130px;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  outline: 0 none;
+  text-align: center;
+}
+.screen-3 .main-content .filtr-group button.active {
+  font-weight: 700;
+}
+.screen-3 .main-content .filtr-group button:focus {
+  outline: 0 none;
+  font-weight: 700;
+}
+.screen-3 .main-content .filtr-group .filtr-container {
+  width: 100%;
+  max-width: 1140px;
+}
+.screen-3 .main-content .filtr-group .filtr-container div {
+  display: inline-block;
+  max-width: 267px;
+  width: 100%;
+  height: 117px;
+  border: 1px solid black;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(1),
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(5),
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(9),
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(13) {
+  margin-left: 0;
+}
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(4),
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(8),
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(12),
+.screen-3 .main-content .filtr-group .filtr-container div:nth-child(16) {
+  margin-right: 0;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-1 {
+  background: url("../img/youtube-block.png") 0 0 no-repeat;
+  width: 100%;
+  max-width: 267px;
+  height: 116px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-1 .title {
+  display: block;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-1 .descr {
+  display: block;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  height: 55px;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-2 {
+  background-color: #f1f1f1;
+  text-align: center;
+  overflow: hidden;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-2 .descr {
+  height: 55px;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-3 {
+  background: url("../img/gallery-picture-1.png") 0 0 no-repeat;
+  width: 100%;
+  max-width: 267px;
+  height: 116px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-3 .title {
+  display: block;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-3 .descr {
+  display: block;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  height: 55px;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-4 {
+  background-color: #f1f1f1;
+  text-align: center;
+  overflow: hidden;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-4 .descr {
+  height: 55px;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-5 {
+  background-color: #f1f1f1;
+  text-align: center;
+  overflow: hidden;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-5 .title {
+  display: block;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.screen-3 .main-content .filtr-group .filtr-container .category-5 .descr {
+  display: block;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  height: 55px;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.icon:before {
+  content: ' ';
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  background-repeat: no-repeat;
+  background-size: 0em 0em;
+}
+
+.no-svg .icon:before {
+  background-image: url("../img/sprite.png");
+}
+
+.previous {
+  display: block;
+  background: url("../img/previous.png") 0 0 no-repeat;
+  height: 91px;
+  width: 91px;
+  margin: 0 auto;
+}
+.previous:hover {
+  background: url("../img/previous-active.png") 0 0 no-repeat;
+}
+
+.more {
+  max-width: 146px;
+  width: 100%;
+  height: 32px;
+  background-color: #c5b84f;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  -webkit-transition: background-color 0.5s 0.3s;
+  transition: background-color 0.5s 0.3s;
+}
+.more:hover {
+  background-color: #b5a73c;
+}
+.more:focus {
+  background-color: #cabe5e;
+}
+.more:active {
+  background-color: #968b31;
+}
+
+.all-see {
+  max-width: 146px;
+  width: 100%;
+  height: 32px;
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .header .navbar {
+    padding: 10px 0;
+  }
+
+  .header .container > .navbar-header,
+  .header .container-fluid > .navbar-header {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .header .navbar-brand {
+    padding: 0 15px;
+  }
+
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-top: 10px;
+  }
+
+  .header .navbar-default .navbar-collapse,
+  .header .navbar-default .navbar-form {
+    border-color: #c5b84f;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header .container > .navbar-header, .header .container-fluid > .navbar-header {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .header .navbar-default .navbar-nav > li > a {
+    font-size: 13px;
+  }
+
+  .nav > li > a {
+    padding: 10px 11px;
+  }
+}

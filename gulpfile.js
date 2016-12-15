@@ -188,6 +188,10 @@ gulp.task('js:vendor', function() {
 	
 	          "wow": {
 		          "main": "./dist/wow.min.js"
+	          },
+	
+	          "jquery-mixitup": {
+		          "main": "./dist/mixitup.min.js"
 	          }
           }
   }))
